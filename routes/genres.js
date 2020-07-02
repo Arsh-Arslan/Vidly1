@@ -1,21 +1,8 @@
+const Genres = require('../modules/genres')
 const Joi = require('joi');
 const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
-
-const genreSchema = new mongoose.Schema({
-    name: {
-        type: String,
-        required: true,
-        minlength: 5,
-        maxlength:50
-    }
-});
-
-const Genre = mongoose.model('Genre', genreSchema);
-
-
-
 
 // router.get('/', (req, res) => {
 //      res.send('Hello World');
