@@ -1,4 +1,4 @@
-const Genres = require('../modules/genres')
+const Genres = require('../model/genres')
 const Joi = require('joi');
 const mongoose = require('mongoose');
 const express = require('express');
